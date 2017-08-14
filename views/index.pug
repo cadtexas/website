@@ -1,6 +1,30 @@
 extends layout
 
+//- Replace the default styles for the front page ones
+block styles
+  link(rel='stylesheet', href='/css/bootstrap.css')
+  link(rel='stylesheet', href='/css/landing.css')
+
 block content
-  footer
-    .container   
-      p &copy; Coders Across Disciplines 2017
+  .site-wrapper
+    .site-wrapper-inner
+      .cover-container
+        img(src='/images/logo.png')
+        h1 Coders Across Disciplines
+        p.
+          We hold weekly workshops in different programming languages for
+          people of any and all coding backgrounds. This year, we will be
+          teaching Python and C++. Sign up below for our mailing list to
+          recieve more updates!
+        p
+          a.btn.btn-primary(
+            role='button'
+            href='https://goo.gl/forms/VbrDAEb3AwBdx5hv2'
+          ) Sign up &raquo;
+          a.btn.btn-default(
+            role='button'
+            href='/about'
+          ) Learn more
+
+//- Delete the footer since this is the front page
+block footer
