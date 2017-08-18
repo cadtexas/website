@@ -1,7 +1,12 @@
 @import "variables.less";
+@import "about.less";
+@import "landing.less";
+
+body > .container {
+  padding-top: 70px;
+}
 
 footer {
-  position: absolute;
   bottom: 0;
   width: 100%;
   background-color: @brand-dark;
@@ -11,4 +16,24 @@ footer {
 
 footer p {
   margin: 0;
+}
+
+.row-primary {
+  background-color: @brand-primary;
+}
+.row-dark {
+  background-color: @brand-dark;
+  color: white;
+}
+.row-success {
+  background-color: @brand-success;
+}
+.row-info {
+  background-color: @brand-info;
+}
+.row-warning {
+  background-color: @brand-warning;
+}
+.row-danger {
+  background-color: @brand-danger;
 }

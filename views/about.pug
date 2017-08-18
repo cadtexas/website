@@ -1,0 +1,35 @@
+extends layout
+
+block content
+  .about
+    .row
+      .container
+        h1 About Us
+        p.
+          Leverage agile frameworks to provide a robust synopsis for high level
+          overviews. Iterative approaches to corporate strategy foster collaborative
+          thinking to further the overall value proposition. Organically grow the
+          holistic world view of disruptive innovation via workplace diversity and
+          empowerment.
+    #otitle.row.row-dark
+      .container
+        h1 Officers
+    #officers.row.row-dark
+      .container.team-members
+        - var n = 0;
+        while n < 7
+          .col-sm-3
+            .team-member
+              img(src='http://via.placeholder.com/225x225')
+              h4 First Lastname
+              p Officer Title
+          - n++
+    .row.row-info
+      .container
+        h1 Partners
+        p.
+          Leverage agile frameworks to provide a robust synopsis for high level
+          overviews. Iterative approaches to corporate strategy foster collaborative
+          thinking to further the overall value proposition. Organically grow the
+          holistic world view of disruptive innovation via workplace diversity and
+          empowerment.
