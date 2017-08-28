@@ -1,6 +1,6 @@
 extend ../node_modules/jade-bootstrap/_bootstrap.pug
 
-block scripts
+append scripts
   script(src='https://use.fontawesome.com/7d5f8e046d.js')
 
 block styles
@@ -23,8 +23,6 @@ append body
             a(href="/about") About
           li
             a(href="/workshop") Workshops
-          li
-            a(href="/event") Events
           li
             a(href="/involved") Get Involved
   block content

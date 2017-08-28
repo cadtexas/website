@@ -1,6 +1,18 @@
 extends layout
 
+append styles
+  link(rel='stylesheet', href='/css/landing.css')
+
 block content
-  h1= message
-  h2= error.status
-  pre #{error.stack}
+  .site-wrapper
+    .site-wrapper-inner
+      .cover-container
+        img(src='/images/logo.png')
+        h1 Something went wrong!
+        h2 If you see our team show them this 
+        .error= error.status 
+          span  - 
+          span= message
+
+//- Delete the footer since this is the front page
+block footer

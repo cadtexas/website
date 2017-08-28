@@ -1,35 +1,36 @@
 extends layout
 
+append styles
+  link(rel='stylesheet', href='/css/about.css')
+
 block content
   .about
-    .row
+    #about.row
       .container
         h1 About Us
         p.
-          Leverage agile frameworks to provide a robust synopsis for high level
-          overviews. Iterative approaches to corporate strategy foster collaborative
-          thinking to further the overall value proposition. Organically grow the
-          holistic world view of disruptive innovation via workplace diversity and
-          empowerment.
-    #otitle.row.row-dark
+          Our mission is to teach and promote programming to all students on
+          campus. We hope to provide a collaborative environment for our
+          members to tackle various challenges while sharpening their problem
+          solving skills. 
+    
+    .row.row-dark.row-title
       .container
         h1 Officers
-    #officers.row.row-dark
+    #officer.row.row-dark.row-content
       .container.team-members
-        - var n = 0;
-        while n < 7
-          .col-sm-3
+        each officer in officers
+          .col-lg-3.col-md-4.col-sm-6
             .team-member
-              img(src='http://via.placeholder.com/225x225')
-              h4 First Lastname
-              p Officer Title
-          - n++
-    .row.row-info
+              img(src=officer.image)
+              h4= officer.name
+              p= officer.title
+    .row.row-title
       .container
         h1 Partners
-        p.
-          Leverage agile frameworks to provide a robust synopsis for high level
-          overviews. Iterative approaches to corporate strategy foster collaborative
-          thinking to further the overall value proposition. Organically grow the
-          holistic world view of disruptive innovation via workplace diversity and
-          empowerment.
+    #partner.row.row-content
+      .container
+        each test in [1, 2, 3, 4]
+          .col-lg-3.col-md-4.col-sm-6
+            .team-member
+              img(src='/images/logos/intel.png')

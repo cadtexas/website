@@ -1,0 +1,31 @@
+extends layout
+
+append styles
+  link(rel='stylesheet', href='/css/workshop.css')
+
+block content
+  .container.workshop
+    h1 Workshops
+    h2 These are the workshops we are offering this semester
+    .workshop-blocks.row
+      .col-lg-4.col-md-6.col-sm-12
+        .title-block.block
+          img(src='https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg')
+          h2 Intro to Python
+          h3 Wednesdays @ 7:00PM
+          h4 CPE 2.216
+          a.btn.btn-warning(href='workshop/intro-to-python') About
+      .col-lg-4.col-md-6.col-sm-12
+        .title-block.block
+          img(src='http://i.imgur.com/UbhTM8S.png')
+          h2 Advanced Python
+          h3 Tuesdays @ 7:00PM
+          h4 CPE 2.216
+          a.btn.btn-warning(href='#') About
+      .col-lg-4.col-md-6.col-sm-12
+        .title-block.block
+          img.cpp-logo(src='https://raw.githubusercontent.com/isocpp/logos/master/cpp_logo.png')
+          h2 C++
+          h3 Mondays @ 7:00PM
+          h4 CPE 2.216
+          a.btn.btn-warning(href='#') About
