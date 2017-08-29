@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use('/css', expressLess(path.join(__dirname, 'less'), { debug: true }));
+app.use('/css', expressLess(path.join(__dirname, 'less'), { compress: true, cache: true }));
 
 app.use('/', index);
 app.use('/workshop', workshop);
