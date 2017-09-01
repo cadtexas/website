@@ -5,67 +5,67 @@ var officers = [
   {
     name: 'Kishan Ramchandran',
     title: 'President',
-    image: 'http://via.placeholder.com/225x225?text=Kishan'
+    image: 'images/officers/kishan-ramchandran.jpg'
   },
   {
     name: 'Alvin Nguyen',
     title: 'Vice President',
-    image: 'http://via.placeholder.com/225x225?text=Alvin'
+    image: 'images/officers/alvin-nguyen.jpg'
   },
   {
     name: 'Carl Karouta',
     title: 'Corporate Director',
-    image: 'http://via.placeholder.com/225x225?text=Carl'
+    image: 'images/officers/carl-karouta.jpg'
   },
   {
     name: 'Alex Collins',
     title: 'Events Director',
-    image: 'http://via.placeholder.com/225x225?text=Alex'
+    image: 'images/officers/alex-collins.png'
   },
   {
     name: 'Karina Galvan',
     title: 'Media Director',
-    image: 'http://via.placeholder.com/225x225?text=Karina'
+    image: 'images/officers/karina-galvan.jpg'
   },
   {
     name: 'Steven Kornajcik',
     title: 'Membership Director',
-    image: 'http://via.placeholder.com/225x225?text=Steven'
+    image: 'images/officers/steven-kornajcik.png'
   },
   {
     name: 'Dan Tran',
     title: 'Treasurer',
-    image: 'http://via.placeholder.com/225x225?text=Dan'
+    image: 'images/officers/dan-tran.png'
   },
   {
     name: 'Shaunik Bhatte',
     title: 'SEC Representative',
-    image: 'http://via.placeholder.com/225x225?text=Shaunik'
+    image: 'images/officers/shaunik-bhatte.png'
   },
   {
     name: 'Aaron Comen',
     title: 'Instructor',
-    image: 'http://via.placeholder.com/225x225?text=Aaron'
+    image: 'images/officers/aaron-comen.png'
   },
   {
     name: 'David Garza',
     title: 'Instructor',
-    image: 'http://via.placeholder.com/225x225?text=David'
+    image: 'images/officers/david-garza.jpg'
   },
   {
     name: 'Eduardo Priego',
     title: 'Instructor',
-    image: 'http://via.placeholder.com/225x225?text=Eduardo'
+    image: 'images/officers/eduardo-priego.png'
   },
   {
     name: 'Juan Trejo',
     title: 'Instructor',
-    image: 'http://via.placeholder.com/225x225?text=Juan'
+    image: 'images/officers/juan-trejo.jpg'
   },
   {
     name: 'Miguel Obregon',
     title: 'Instructor',
-    image: 'http://via.placeholder.com/225x225?text=Miguel'
+    image: 'images/officers/miguel-obregon.jpg'
   },
 ];
 

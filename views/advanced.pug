@@ -1,0 +1,43 @@
+extends layout
+
+append styles
+  link(rel='stylesheet', href='/css/workshop.css')
+
+block content
+  .container.workshop
+    .row
+      .col-lg-3.col-md-6.col-sm-12
+        .block.title-block
+          img(src='../images/logos/python-advanced.png')
+          h2 Advanced Python
+          h3 Tuesdays @ 7:00PM
+          h3 CPE 2.216
+      .col-lg-9.col-md-6.col-sm-12
+        .block.row
+          .col-lg-6
+            h2 About
+            p.
+              This course has been designed to pick up where Intro to Python
+              left off. We will quickly review the basic of programming, and
+              then start with more advanced topics, including object-oriented
+              programming. This course is more advanced than the previous
+              course, and so requires more time and effort on your part. 
+            p.
+              By the end of this course students will:
+            ul
+              li Understand the usefulness of object-oriented programming
+              li Create objects to write efficient algorithms
+              li Use different data structures to solve specific problems
+          .col-lg-6
+            h2 Taught by
+            .row
+              .col-sm-6
+                img(src='../images/officers/david-garza.jpg')
+                .caption
+                  p David
+                  p(style='color: black') TBD
+              .col-sm-6
+                img(src='../images/officers/aaron-comen.png')
+                .caption
+                  p Aaron
+                  p(style='color: black') TBD

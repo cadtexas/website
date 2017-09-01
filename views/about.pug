@@ -9,11 +9,37 @@ block content
       .container
         h1 About Us
         p.
-          Our mission is to teach and promote programming to all students on
-          campus. We hope to provide a collaborative environment for our
-          members to tackle various challenges while sharpening their problem
-          solving skills. 
-    
+          CAD is a multi-disciplinary organization which seeks to teach and
+          promote programming to all students on campus. We will do these
+          through our general meetings, weekly workshops, and our coding
+          events. This semester, we will be holding weekly workshops in Intro
+          to Python, Advanced Python, and C++. Please check our calendar for
+          more information about our general meetings and other upcoming
+          events.
+    .row.row-success.row-title
+      .container
+        h1 Keep Up To Date
+    .row.row-success.row-content
+      .container
+        .col-lg-4.col-md-6.col-sm-6
+          i.fa.fa-calendar.fa-4x(aria-hidden='true')
+          h2 Calendar
+          p.
+            Check out our calendar for the most up to date information about
+            our meetings and events.
+          a.btn.btn-warning(href='http://cadtx.pw/calendar') Calendar
+        .col-lg-4.col-md-6.col-sm-6
+          i.fa.fa-facebook.fa-4x(aria-hidden='true')
+          h2 Facebook
+          p.
+            Join our Facebook group to stay connected with CAD.
+          a.btn.btn-warning(href='http://cadtx.pw/facebook') Facebook
+        .col-lg-4.col-md-6.col-sm-6
+          i.fa.fa-pencil.fa-4x(aria-hidden='true')
+          h2 Sign Up
+          p.
+            Join our newsletter for weekly updates about our events.
+          a.btn.btn-warning(href='http://cadtx.pw/signup') Sign Up
     .row.row-dark.row-title
       .container
         h1 Officers
@@ -23,7 +49,7 @@ block content
           .col-lg-3.col-md-4.col-sm-6
             .team-member
               img(src=officer.image)
-              h4= officer.name
+              h2= officer.name
               p= officer.title
 //-    .row.row-title
 //-      .container
