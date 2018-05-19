@@ -1,0 +1,52 @@
+extends layout
+
+append var
+  - var current = "Home"
+
+block content
+  .container
+    #banner.page-header
+      .row
+        .col-xl-7.col-lg-8.col-md-7.col-sm-6.align-self-center
+          h1.text-primary Coders Across Disciplines
+          p.lead Programming for everyone!
+        .col
+          img.img-fluid(src="images/logos/logo.png")
+    .row
+      .col-lg-4
+        .card.text-white.bg-secondary.mb-3
+          a.text-white.card-header(href="http://cadtx.pw/signup") Newsletter
+          .card-body
+            h4.card-title
+              a.text-white(href="http://cadtx.pw/signup") Get updates!
+            p.card-text.
+              To get the latest news about future workshops, general
+              meetings, and major events sign up for our newsletter.
+      .col-lg-4
+        .card.border-secondary.mb-3
+          a.text-dark.card-header(href="/officers") Officer Board Fall 2018
+          .card-body
+            h4.card-title
+              a.text-dark(href="/officers") New officers!
+            p.card-text.
+              Check out the new officers for Fall 2018. We made some changes to
+              our officer structure with the addition of three new VP roles:
+              Internal, External, and Special Events.
+      .col-lg-4
+        .card.border-info.mb-3
+          .card-header Stay Connected
+          .card-body
+            h4.card-title Follow Us!
+            p.card-text.
+              Below are all the places you can find us online. If you think
+              were missing out on the newest social media just let us know!
+          ul.list-group.list-group-flush
+            a.list-group-item(href="http://cadtx.pw/hornslink") HornsLink
+            a.list-group-item(href="http://cadtx.pw/calendar") Calendar
+            a.list-group-item(href="http://cadtx.pw/facebook") Facebook
+            a.list-group-item(href="http://cadtx.pw/github") GitHub
+            a.list-group-item(href="mailto:contact@cadtexas.com") Email Us
+
+
+
+block footer

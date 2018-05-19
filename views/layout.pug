@@ -1,0 +1,41 @@
+extend bootstrap.pug
+
+append scripts
+  script(src='https://use.fontawesome.com/7d5f8e046d.js')
+append styles
+  link(rel='stylesheet', href='/css/main.css')
+
+append body
+  block var
+    -
+      var links = [{url:"/", name:"Home"},
+                   {url:"/officers", name:"Officers"}]
+
+  nav.navbar.navbar-expand-lg.fixed-top.navbar-light.bg-light
+    .container
+      a.navbar-brand(href="") Coders Across Disciplines
+      button.navbar-toggler(
+        type="button",data-toggle="collapse",
+        data-target="#navbarSupportedContent",
+        aria-controls="navbarSupportedContent",
+        aria-expanded="false",
+        aria-label="Toggle navigation"
+      )
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto
+          each link in links
+            if link.name==current
+              li.nav-item.active
+                a.nav-link(href=link.url)= link.name
+                  span.sr-only (current)
+            else
+              li.nav-item
+              a.nav-link(href=link.url)=link.name
+
+  block content
+
+  block footer
+    footer
+      .container
+        p &copy; Coders Across Disciplines 2017
