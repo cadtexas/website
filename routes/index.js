@@ -44,14 +44,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'UT CAD' });
 });
 
-/* GET about page */
-router.get('/about', function(req, res, next) {
-  res.render('about', { title: 'CAD - About', 'officers': officers });
-});
-
-/* GET get involved  page */
-router.get('/involved', function(req, res, next) {
-  res.render('involved', { title: 'CAD - Get Involved'});
-});
-
 module.exports = router;
