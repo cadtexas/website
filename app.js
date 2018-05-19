@@ -1,4 +1,5 @@
 var express = require('express');
+var sass = require('node-sass-middleware');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -20,6 +21,13 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(sass({
+  src: path.join(__dirname, 'scss'),
+  dest: path.join(__dirname, 'public/css'),
+  debug: true,
+  outputStyle: 'compressed',
+  prefix: "/css"
+}));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
