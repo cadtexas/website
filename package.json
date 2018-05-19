@@ -7,11 +7,9 @@
   },
   "dependencies": {
     "body-parser": "~1.17.1",
-    "bootstrap-less": "^3.3.8",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.3",
     "express": "~4.15.2",
-    "express-less": "^0.1.0",
     "jade-bootstrap": "^1.0.14",
     "morgan": "~1.8.1",
     "pug": "^2.0.0-rc.3",
