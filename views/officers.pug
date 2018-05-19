@@ -1,0 +1,19 @@
+extends layout
+
+append var
+  - var current = "Officers"
+
+block content
+  .container
+    .row
+      each officer in officers
+        .col-xl-3.col-lg-4.col-sm-6
+          .card.text-white.bg-secondary.mb-3
+            .card-header= officer.title
+            .card-body
+              h4.card-title= officer.name
+              p.card-text
+            img.img-fluid(src=officer.image)
+
+
+block footer
