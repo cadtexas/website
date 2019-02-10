@@ -7,7 +7,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var index = require('./routes/index');
-var workshop = require('./routes/workshop');
+//var workshop = require('./routes/workshop');
 
 var app = express();
 
@@ -31,7 +31,7 @@ app.use(sass({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
-app.use('/workshop', workshop);
+//app.use('/workshop', workshop);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
