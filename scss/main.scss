@@ -1,1 +1,76 @@
+$primary-color: #F3CA3E;
+$secondary-color: #A27E0B;
 
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.splash {
+  height: 100vh;
+  background-color: $primary-color;
+  color: white;
+  .logo {
+    font-family: "Arial Black";
+    font-size: 52px;
+    line-height: 75px;
+    letter-spacing: 10px;
+    margin-left: 56px;
+    width: 100%;
+    .a {
+      margin-top: 56px;
+      float: left;
+    }
+    .cad {
+      margin-top: 46px;
+      display: block;
+      padding-left: 10px;
+      border: 10px solid white;
+      float: left;
+    }
+    .emy {
+      margin-top: 56px;
+      margin-left: 10px;
+      float: left;
+    }
+  }
+  .welcome {
+    padding-top: 250px;
+    text-align: center;
+    width: 80vw; 
+    margin: 0 auto;
+    .title {
+      font-family: "Andale Mono";
+      font-size: 38px;
+      letter-spacing: 10px;
+      line-height: 42px;
+    }
+    .subtitle {
+      margin-top: 50px;
+      font-family: Athelas;
+      font-size: 50px;
+      letter-spacing: 3px;
+      line-height: 60px;
+    }
+    .connect {
+      display: block;
+      background-color: $primary-color;
+      margin: 0 auto;
+    }
+    .line {
+      box-sizing: border-box;
+      height: 0px;
+      border: 5px solid white;
+    }
+  }
+}
+.content {
+  width: 80vw; 
+  margin: 0 auto;
+  font-family: Athelas;
+  .mission {
+    color: $secondary-color;
+    font-size: 38px;
+    text-align: center;
+  }
+}
