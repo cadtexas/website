@@ -1,52 +1,110 @@
 extends layout
 
-append var
-  - var current = "Home"
-
 block content
-  .container
-    #banner.page-header
+  .cover-container.d-flex.vh-100.mx-auto.flex-column.bg-primary
+    header.mb-auto
+      span.a A
+      span.cad CAD
+      span.emy EMY
+    main.mx-auto
+      h1 Coders Across Disciplines
+      h2 Empowering multi-disciplinary students to successfully navigate diverse, future-looking workplaces.
+    footer.mx-auto.mt-auto
+      h3 Connect With Us
       .row
-        .col-xl-7.col-lg-8.col-md-7.col-sm-6.align-self-center
-          h1.text-primary Coders Across Disciplines
-          p.lead Programming for everyone!
         .col
-          img.img-fluid(src="images/logos/logo.png")
+          i(class="fas fa-3x fa-envelope" aria-hidden="true")
+        .col
+          i(class="fab fa-3x fa-facebook-f" aria-hidden="true")
+        .col
+          i(class="fab fa-3x fa-github" aria-hidden="true")
+        .col
+          i(class="fas fa-3x fa-users" aria-hidden="true")
+  .container
+    .row.p-4.
+       Coders Across Disciplines, an organization at The University of Texas
+       at Austin, seeks to enable students—of all majors and backgrounds—to
+       develop coding literacy skills. Our general meetings, workshops, and
+       corporate exposure events encourage students to learn programming and
+       connect with exciting opporunities.
     .row
-      .col-lg-4
-        .card.text-white.bg-secondary.mb-3
-          a.text-white.card-header(href="http://cadtx.pw/signup") Newsletter
+      .col-11.mx-auto
+        .bulletin.card.text-white.bg-primary.mb-3
           .card-body
-            h4.card-title
-              a.text-white(href="http://cadtx.pw/signup") Get updates!
+            h4.card-title Bulletin
             p.card-text.
               To get the latest news about future workshops, general
               meetings, and major events sign up for our newsletter.
-      .col-lg-4
-        .card.border-secondary.mb-3
-          a.text-dark.card-header(href="/officers") Officer Board Fall 2018
+    h1 Spring 2019 Workshops
+    .workshops.row
+      .col-md-6.px-0
+        .card.text-white.bg-primary.mb-3
           .card-body
-            h4.card-title
-              a.text-dark(href="/officers") New officers!
+            h4.card-title Basic Concepts
             p.card-text.
-              Check out the new officers for Fall 2018. We made some changes to
-              our officer structure with the addition of three new VP roles:
-              Internal, External, and Special Events.
-      .col-lg-4
-        .card.border-info.mb-3
-          .card-header Stay Connected
+              Learn basic computer science concepts and multiple coding
+              languages through our new, interactive workshop. Through this
+              course, you will learn both Python and Java.
+      .col-md-6.px-0
+        .card.text-white.bg-secondary.mb-3
           .card-body
-            h4.card-title Follow Us!
+            h4.card-title Bulletin
             p.card-text.
-              Below are all the places you can find us online. If you think
-              were missing out on the newest social media just let us know!
-          ul.list-group.list-group-flush
-            a.list-group-item(href="http://cadtx.pw/hornslink") HornsLink
-            a.list-group-item(href="http://cadtx.pw/calendar") Calendar
-            a.list-group-item(href="http://cadtx.pw/facebook") Facebook
-            a.list-group-item(href="http://cadtx.pw/github") GitHub
-            a.list-group-item(href="mailto:contact@cadtexas.com") Email Us
-
-
+              To get the latest news about future workshops, general
+              meetings, and major events sign up for our newsletter.
+    h1 Meet Our Officers
+    .officers.row
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+    .officers.row
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+    .sponsors.row
+      .col-lg-7.px-0
+        .card.text-white.bg-primary.mb-3
+          .card-body
+            h4.card-title Sponsor Spotlight
+            p.card-text.
+              Our generous sponsors allow us to equip 200+ diverse, underserved
+              UT students every year with skills that will prepare them for both
+              current and future job markets. These donations allow us to lower
+              membership dues, invite insightful guest speakers, and provide
+              enriching activities.
+      .col-lg-5.px-0
+        .card.text-white.bg-secondary.mb-3
+          .card-body
+            h5.card-title — current and past sponsors —
+            p.card-text
+    h1 Meet Our Instructors
+    .officers.row
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+    .officers.row
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
+      .col-lg-3.col-md-6
+        img(src="https://via.placeholder.com/150")
 
 block footer

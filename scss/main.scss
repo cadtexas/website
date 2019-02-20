@@ -2,11 +2,103 @@
 @import '../node_modules/bootstrap/scss/bootstrap';
 @import 'bootswatch';
 
-body {
-  padding-top: 120px;
+.cover-container {
+  color: white;
+  font-size: 0.7em;
+  @include media-breakpoint-up(sm) {
+    font-size: 1em;
+  }
+  header {
+    font-family: "Arial Black";
+    font-size: 2.5em;
+    line-height: 1.4em;
+    letter-spacing: 0.2em;
+    margin-left: 3rem;
+    @include media-breakpoint-down(sm) {
+      margin: 0 auto;
+    }
+    .a {
+      margin-top: 3rem;
+      float: left;
+    }
+    .cad {
+      margin-top: calc(3rem - 5px);
+      display: block;
+      padding-left: 0.25em;
+      border: 5px solid white;
+      @include media-breakpoint-up(sm) {
+        margin-top: calc(3rem - 10px);
+        border: 10px solid white;
+      }
+      float: left;
+    }
+    .emy {
+      margin-top: 3rem;
+      margin-left: 10px;
+      float: left;
+    }
+  }
+  main {
+    text-align: center;
+    h1 {
+      font-size: 2em;
+      margin-bottom: 4rem;
+    }
+    h2 {
+      font-size: 3em;
+    }
+  }
+  footer {
+    max-width: 42em;
+    text-align: center;
+    .row {
+      padding-top: 2.5rem;
+      padding-bottom: 3rem;
+    }
+    h3 {
+      font-size: 1.8em;
+    }
+  }
 }
 
-#banner {
+.container {
+  h1 {
+    text-align: center;
+    color: $tertiary;
+  }
+}
+
+.card {
+  border-radius: 0!important;
+}
+
+.bulletin {
+  border: 5px solid white;
+  outline: 5px solid $primary;
+}
+
+.workshops {
+  .col-6 .bg-primary {
+    border-bottom: 10px solid $secondary;
+  }
+  .col-6 .bg-secondary {
+    border-bottom: 10px solid $primary;
+  }
+}
+
+.sponsors {
+  h5 {
+    color: $primary;
+    text-align: center;
+  }
+}
+
+.sponsors, .workshops {
+  .card {
+    height: 100%;  
+  }
+}
+
+.officers {
   text-align: center;
-  padding-bottom: 30px;
 }
